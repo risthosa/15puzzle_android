@@ -35,7 +35,7 @@ onCreate fonksiyonu program çalıştırıldığında çağrılır ve gövdesind
 
 onStart fonksiyonu onCreate fonksiyonunun ardından çalışır ve burada Combination sınıfından mevcut oyunun taş sıralamasını yapacak fonksiyon çağrılır. Ardından döngü içinde arayüze eklenecek taşların stil ayarları yapılır ve taşlar oyun tahtasına dinamik olarak eklenir. Dinamik olarak eklenmesinin sebebi farklı zorluk seviyelerinde taşların boyut ve sayısının değişmesinden ötürüdür.
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.001.jpeg)
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 001](https://github.com/user-attachments/assets/7dc99722-f5c5-47f6-b4d4-8f6afaba9cc6)
 
 *Şekil 1: onStart fonksiyonunun içinde veri tabanından yüksek skorları getiren kod parçası*
 
@@ -47,7 +47,7 @@ onClick fonksiyonu tahtadaki boş kutunun konumu ve tıklanan kutunun konumu ara
 
 Aynı zamanda taşların sıra kontrolü de onClick fonksiyonu içinde yapılır. Çünkü her hamleden sonra oyunun bitip bitmediği bilinmelidir. Eğer oyun bitmişse bir animasyon çalışır ve taşlar dikey eksende kayarak görünürden kaybolur. Ardından skorlar kayıt edilir.
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.002.png)
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 002](https://github.com/user-attachments/assets/e287b282-9433-4f37-af4a-2af21ee7f2a6)
 
 *Şekil 2: onClick fonksiyonu içinde bir if bloğu*
 
@@ -55,7 +55,7 @@ Aynı zamanda taşların sıra kontrolü de onClick fonksiyonu içinde yapılır
 
 Bu fonksiyonlar dışında oyunda zorluk seviyesini değiştiren radioButton nesneleri bulunur. Bu butonların kontrol fonksiyonu  MainActivity sınıfında bulunur ve aşağıdaki gibidir.
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.003.png)
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 003](https://github.com/user-attachments/assets/81797e16-fce1-405f-90dd-450cc96291e3)
 
 *Şekil 3: RadioButton nesneleri*
 
@@ -65,7 +65,7 @@ Bu fonksiyonlar dışında oyunda zorluk seviyesini değiştiren radioButton nes
 
 Bu sınıfta SQLITE ile bir veri tabanı ve tablo oluşturulmuştur. Tablo kolonları n(oyun tahtasının boyutu), bestScore, bestTime olarak tanımlanmıştır. Sınıfın içerisinde en iyi skor ve süreyi kaydetmek için bir kayıt fonksiyonu bulunur. Veri tabanındaki en iyi süreyi ve skoru çağırmak için iki adet fonksiyon bulunur.
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.004.png)
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 004](https://github.com/user-attachments/assets/68d92b73-368a-4f7b-8e13-fcc40520400b)
 
 *Şekil 4: Oyun ekranında bulunan yüksek skorlar*
 
@@ -79,7 +79,7 @@ Bu sınıfta statik bir fonksiyon ve statik gameNums dizisi bulunur. Fonksiyon s
 
 Zaman ve sayaç fonksiyonlarını içinde bulunduran sınıftır. Bu fonksiyonlar sayaç için sıfırla ve arttır olmak üzere iki tanedir. Kronometre için ise üç fonksiyon bulunur. Bunlar başlat sıfırla ve durdur fonksiyonudur. 
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.005.png)
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 005](https://github.com/user-attachments/assets/5d063695-c809-4ca1-9a35-d79687544fcc)
 
 *Şekil 5: Oyun ekranında bulunan süre ve hamle sayacı.*
 
@@ -97,7 +97,7 @@ Oyun kaynak kodu dosyasındaki activity\_main.xml isimli dosyada oyunun arayüz 
 
 Oyun başlangıcında sadece boş bir tahta görünümü, sayaçlar ve zorluk seviyesi butonları görünür. Bunun sebebi tahtanın oyun başladığında dinamik olarak doldurulmasıdır. 
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.006.png)
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 006](https://github.com/user-attachments/assets/24c5aafd-ed4b-4d89-be10-f014ffd74f0f)
 
 *Şekil 6: activity\_main.xml dosyasının UI görünümü*
 
@@ -105,8 +105,10 @@ Oyun başlangıcında sadece boş bir tahta görünümü, sayaçlar ve zorluk se
 
 Aşağıda ise farklı zorluk seviyesi için görünümler bulunmaktadır
 
-*3x3 4x4 5x5![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.007.jpeg)![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.008.jpeg)![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.009.jpeg)*
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 007](https://github.com/user-attachments/assets/40f39568-6370-4339-92cd-54eb6df67084)![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 008](https://github.com/user-attachments/assets/45e4e45c-8d43-44b3-af37-9c3fa4184402)![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 009](https://github.com/user-attachments/assets/f6f52a4a-66c7-4936-8c01-65e279b32ce9)
 
-![](Aspose.Words.a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5.010.jpeg)
+*3x3 4x4 5x5
+
+![Aspose Words a2f76d2c-5c48-4bcc-9d6f-6ff63f120fe5 010](https://github.com/user-attachments/assets/ac1b899d-0ff1-4451-9a62-eebdd50e3766)
 
 *Şekil 7: Oyun sonu tahtanın görünümü*
