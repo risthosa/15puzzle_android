@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_swap_horiz_24"/>
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_access_time_24" />
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/bestScoreAndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:fadeScrollbars="false"
+        android:animateLayoutChanges="true"
+        android:id="@+id/root"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/solved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ÇÖZÜLDÜ!"
+            android:textSize="48sp"
+            android:textColor="#989898"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:background="@drawable/radiobuttons"
+                android:onClick="onRadioButtonClicked"
+                android:text="3x3" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:background="@drawable/radiobuttons"
+                android:onClick="onRadioButtonClicked"
+                android:text="4x4" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:background="@drawable/radiobuttons"
+                android:onClick="onRadioButtonClicked"
+                android:text="5x5" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/solveButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ÇÖZ"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="solve"/>
+    </LinearLayout>
+</LinearLayout>
